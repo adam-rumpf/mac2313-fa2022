@@ -1,0 +1,153 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5222,        145]
+NotebookOptionsPosition[      4867,        131]
+NotebookOutlinePosition[      5268,        147]
+CellTagsIndexPosition[      5225,        144]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"f", "[", "x", "]"}], ",", 
+          RowBox[{
+           RowBox[{"Normal", "[", 
+            RowBox[{"Series", "[", 
+             RowBox[{
+              RowBox[{"f", "[", "y", "]"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"y", ",", "c", ",", "n"}], "}"}]}], "]"}], "]"}], "/.", 
+           RowBox[{"y", "\[Rule]", "x"}]}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", 
+          RowBox[{
+           RowBox[{"-", "2"}], "Pi"}], ",", 
+          RowBox[{"2", "Pi"}]}], "}"}], ",", 
+        RowBox[{"PlotStyle", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"Blue", ",", "Red"}], "}"}]}], ",", 
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "2"}], "Pi"}], ",", 
+           RowBox[{"2", "Pi"}]}], "}"}]}], ",", 
+        RowBox[{"AspectRatio", "\[Rule]", "Automatic"}]}], "]"}], ",", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{"{", 
+        RowBox[{"Red", ",", 
+         RowBox[{"PointSize", "[", "Large", "]"}], ",", 
+         RowBox[{"Point", "[", 
+          RowBox[{"{", 
+           RowBox[{"c", ",", 
+            RowBox[{"f", "[", "c", "]"}]}], "}"}], "]"}]}], "}"}], "]"}]}], 
+     "}"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"f", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Sin", "\[Rule]", "\"\<sin(x)\>\""}], ",", 
+       RowBox[{"Cos", "\[Rule]", "\"\<cos(x)\>\""}], ",", 
+       RowBox[{"Tan", "\[Rule]", "\"\<tan(x)\>\""}], ",", 
+       RowBox[{
+       "Exp", "\[Rule]", 
+        "\"\<\!\(\*SuperscriptBox[\(\[ExponentialE]\), \(x\)]\)\>\""}], ",", 
+       RowBox[{"Log", "\[Rule]", "\"\<ln(x)\>\""}], ",", 
+       RowBox[{
+        RowBox[{"Function", "[", 
+         RowBox[{"x", ",", 
+          RowBox[{"5", 
+           SuperscriptBox["E", 
+            RowBox[{
+             RowBox[{"-", 
+              SuperscriptBox["x", "2"]}], "/", "5"}]]}]}], "]"}], "\[Rule]", 
+        "\"\<5\!\(\*SuperscriptBox[\(\[ExponentialE]\), \
+\(\(-\*SuperscriptBox[\(x\), \(2\)]\)/5\)]\)\>\""}], ",", 
+       RowBox[{
+        RowBox[{"Function", "[", 
+         RowBox[{"x", ",", 
+          RowBox[{"2.08", "\[VeryThinSpace]", "-", 
+           RowBox[{"0.296", "x"}], "-", 
+           RowBox[{"0.332", 
+            SuperscriptBox["x", "2"]}], "+", 
+           RowBox[{"0.022", 
+            SuperscriptBox["x", "3"]}], "+", 
+           RowBox[{"0.01", 
+            SuperscriptBox["x", "4"]}]}]}], "]"}], "\[Rule]", 
+        "\"\<0.01\!\(\*SuperscriptBox[\(x\), \
+\(4\)]\)+0.022\!\(\*SuperscriptBox[\(x\), \(3\)]\)-0.332\!\(\*SuperscriptBox[\
+\(x\), \(2\)]\)-0.296x+2.08\>\""}], ",", 
+       RowBox[{
+        RowBox[{"Function", "[", 
+         RowBox[{"x", ",", 
+          FractionBox["1", 
+           RowBox[{"x", "+", "1"}]]}], "]"}], "\[Rule]", 
+        "\"\<\!\(\*FractionBox[\(1\), \(x + 1\)]\)\>\""}], ",", 
+       RowBox[{
+       "CubeRoot", "\[Rule]", "\"\<\!\(\*RadicalBox[\(x\), \(3\)]\)\>\""}]}], 
+      "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"c", ",", "0"}], "}"}], ",", 
+     RowBox[{"Floor", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], "Pi"}], ",", "0.1"}], "]"}], ",", 
+     RowBox[{"Ceiling", "[", 
+      RowBox[{
+       RowBox[{"2", "Pi"}], ",", "0.1"}], "]"}], ",", "0.1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "0", ",", "25", ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8262361937755632`*^9, 3.826236211700341*^9}, {
+  3.8262362541306863`*^9, 3.826236443285261*^9}, {3.826236508487934*^9, 
+  3.826236513743429*^9}, {3.826491928731946*^9, 3.8264919545547495`*^9}, {
+  3.826491996013816*^9, 3.826492153517207*^9}, {3.826492194937478*^9, 
+  3.826492258955475*^9}, {3.826492430611712*^9, 3.826492437624257*^9}, {
+  3.826492497743882*^9, 3.8264925054730263`*^9}, {3.8264925398591824`*^9, 
+  3.826492540343726*^9}, {3.8264925832877893`*^9, 3.8264927434338365`*^9}, {
+  3.8267354849624367`*^9, 3.826735485389041*^9}, {3.8267355194088573`*^9, 
+  3.826735559706232*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"6c99041b-510a-467b-a55d-a21478cb76c7"]
+},
+WindowSize->{1584, 849},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ef838edc-c978-4280-806b-a87314c95de4"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 4305, 109, 128, "Input",ExpressionUUID->"6c99041b-510a-467b-a55d-a21478cb76c7"]
+}
+]
+*)
+

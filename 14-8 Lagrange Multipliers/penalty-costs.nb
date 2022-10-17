@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      1847,         61]
-NotebookOptionsPosition[      1493,         47]
-NotebookOutlinePosition[      1896,         63]
-CellTagsIndexPosition[      1853,         60]
+NotebookDataLength[      1905,         62]
+NotebookOptionsPosition[      1520,         47]
+NotebookOutlinePosition[      1954,         64]
+CellTagsIndexPosition[      1911,         61]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -23,7 +23,7 @@ Cell[BoxData[
   RowBox[{
    RowBox[{"Quiet", "[", 
     RowBox[{
-     RowBox[{"Maximize", "[", 
+     RowBox[{"NMaximize", "[", 
       RowBox[{
        RowBox[{"x", "+", 
         SuperscriptBox["y", "2"], "-", 
@@ -41,12 +41,13 @@ Cell[BoxData[
       RowBox[{"\[Lambda]", ",", "2"}], "}"}], ",", 
      RowBox[{"-", "1"}], ",", "5", ",", "0.1"}], "}"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.874501808415226*^9, 3.87450187308866*^9}, {
-  3.874501935335294*^9, 3.874501935936846*^9}, {3.874502245867089*^9, 
-  3.8745022661143646`*^9}},
- CellLabel->"In[21]:=",ExpressionUUID->"b663396b-8641-453a-8e5f-ccf4bd296998"]
+   3.874501935335294*^9, 3.874501935936846*^9}, {3.874502245867089*^9, 
+   3.8745022661143646`*^9}, 3.8745863229380255`*^9},
+ CellLabel->"In[12]:=",ExpressionUUID->"b663396b-8641-453a-8e5f-ccf4bd296998"]
 },
-WindowSize->{760, 833},
-WindowMargins->{{200, Automatic}, {Automatic, 59}},
+WindowSize->{1920, 1037},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification:>1.5 Inherited,
 FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"7a55e439-f2d7-4b29-9a14-a405c224a7f2"
@@ -62,10 +63,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 931, 25, 32, "Input",ExpressionUUID->"b663396b-8641-453a-8e5f-ccf4bd296998"]
+Cell[558, 20, 958, 25, 48, "Input",ExpressionUUID->"b663396b-8641-453a-8e5f-ccf4bd296998"]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
